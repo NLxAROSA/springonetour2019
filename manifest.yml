@@ -5,3 +5,4 @@
   services:
     - workshop-db
     - workshop-config-server
+    - workshop-service-registry
