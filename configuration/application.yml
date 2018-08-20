@@ -4,7 +4,6 @@ management:
       exposure:
         include: "*"
 spring:
-  profiles: mysql
   jpa:
     generate-ddl: true
     properties:
