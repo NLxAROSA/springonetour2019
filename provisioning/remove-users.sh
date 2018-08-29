@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERSFILE=users.txt
+USERSFILE=removeusers.txt
 WORKSHOP_ORG=ing-workshop
 
 for user in `cat ${USERSFILE}`
