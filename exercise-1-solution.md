@@ -133,7 +133,7 @@ start command:     JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/j
 
 * Lookup the created (dynamic) route from the console
 * Copy the route 
-* Open the application in the browser in specific example the route was: [http://fortune-service-rested-springhare.cfapps.io](http://fortune-service-rested-springhare.cfapps.io)
+* Open the application in the browser (e.g. in specific example the route was: [https://workshop-fortune-service-relaxed-grysbok.apps.pushto.cf](https://workshop-fortune-service-relaxed-grysbok.apps.pushto.cf))
 * Open the application in
 * Show the log file our the running app
 
@@ -148,4 +148,4 @@ cf app fortune-service
 
 * Show the deployed application in the Pivotal Cloud Foundry web console:
 
-[https://console.run.pivotal.io/](https://console.run.pivotal.io/)
+[https://apps.sys.pushto.cf](https://apps.sys.pushto.cf)
