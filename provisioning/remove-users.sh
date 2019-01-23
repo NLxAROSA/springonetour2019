@@ -3,6 +3,8 @@
 USERSFILE=removeusers.txt
 WORKSHOP_ORG=pcf-workshop
 
+cf target -o ${WORKSHOP_ORG}
+
 for user in `cat ${USERSFILE}`
 do
     SPACENAME=`echo ${user} | awk -F"@" '{print $1}'`
