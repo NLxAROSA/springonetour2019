@@ -37,7 +37,7 @@ services:
 * Start a Service Registry with name `workshop-service-registry` on Cloud Foundry
 
 ```bash
-cf create-service p-service-registry trial workshop-service-registry
+cf create-service p-service-registry standard workshop-service-registry
 ```
 
 * Build the project again
@@ -56,20 +56,12 @@ cf push
   * Clone repo: [https://github.com/dcaron/workshop-greeting-ui.git](https://github.com/dcaron/workshop-greeting-ui.git) 
   * Build the project `./mvnw clean package`
 
-* Start a Cloud Bus (AMQP) service instance with name `workshop-cloud-bus`
+* Start a RabbitMQ service instance with name `workshop-cloud-bus`
 
 The Cloud Bus is used by the UI application
 
 ```bash
-cf create-service cloudamqp lemur workshop-cloud-bus
-```
- 
-* Start a Hystrix Dashboard service instance with name `workshop-circuit-breaker-dashboard` on Cloud Foundry
-
-The Hystrix dashboard is used by the UI application
-
-```bash
-cf create-service p-circuit-breaker-dashboard trial workshop-circuit-breaker-dashboard
+cf create-service p.rabbitmq single-node-3.7 workshop-cloud-bus
 ```
 
 * Push the UI to Cloud Foundry

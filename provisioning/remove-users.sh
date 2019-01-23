@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERSFILE=removeusers.txt
-WORKSHOP_ORG=ing-workshop
+WORKSHOP_ORG=pcf-workshop
 
 for user in `cat ${USERSFILE}`
 do

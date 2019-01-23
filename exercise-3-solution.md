@@ -89,13 +89,13 @@ spring:
 * Start a config server in Cloud Foundry
 
 ```bash
-cf create-service p-config-server trial workshop-config-server -c '{"git": { "uri": "https://github.com/dcaron/workshop-fortune-service.git", "searchPaths": "configuration", "label": "2-persistent-database-config-server" } }'
+cf create-service p-config-server standard workshop-config-server -c '{"git": { "uri": "https://github.com/dcaron/workshop-fortune-service.git", "searchPaths": "configuration", "label": "2-persistent-database-config-server" } }'
 ```
 
 * Start a database in Cloud Foundry
 
 ```bash
-cf create-service cleardb spark workshop-db
+cf create-service p.mysql db-small workshop-db
 ```
 
 * Bind the database and config server services to the application

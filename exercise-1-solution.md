@@ -2,7 +2,7 @@
 
 Solution branch: `master`
 
-Required dependencies
+* Add required dependencies
 
 ```xml
 <dependencies>
@@ -16,6 +16,27 @@ Required dependencies
     </dependency>
 </dependencies>
 ```
+
+* Introduce a REST controller
+
+```java
+package io.pivotal.workshop.workshopfortuneservice;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FortuneController {
+
+    @GetMapping
+    public String fortune() {
+        return "No fortune";
+    }
+}
+
+```
+
+* Push the application to Cloud Foundry
 
 ```bash
 cf push workshop-fortune-service --random-route -p target/workshop-fortune-service-0.0.1-SNAPSHOT.jar
@@ -112,7 +133,7 @@ start command:     JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/j
 
 * Lookup the created (dynamic) route from the console
 * Copy the route 
-* Open the application in the browser in specific example the route was: [http://fortune-service-rested-springhare.cfapps.io](http://fortune-service-rested-springhare.cfapps.io)
+* Open the application in the browser (e.g. in specific example the route was: [https://workshop-fortune-service-relaxed-grysbok.apps.pushto.cf](https://workshop-fortune-service-relaxed-grysbok.apps.pushto.cf))
 * Open the application in
 * Show the log file our the running app
 
@@ -127,10 +148,4 @@ cf app fortune-service
 
 * Show the deployed application in the Pivotal Cloud Foundry web console:
 
-[https://console.run.pivotal.io/](https://console.run.pivotal.io/)
-
-* Stop the Fortune service
-
-```bash
-cf stop fortune-service
-```
+[https://apps.sys.pushto.cf](https://apps.sys.pushto.cf)

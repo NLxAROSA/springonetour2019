@@ -11,7 +11,7 @@ cf marketplace
 ```bash
 cf services
 name          service   plan    bound apps   last operation
-workshop-db   cleardb   spark                create succeeded
+workshop-db   p.mysql   db-small             create succeeded
 ```
 
 ## Show info about config server

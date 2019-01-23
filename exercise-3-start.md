@@ -9,7 +9,7 @@
 
 This exercise is a bit harder so we have have some [hints](#hints) for you
 
-* Start a Free ClearDB MySQL Database Service on Cloud Foundry. `spark` is the name of free service plan
+* Start a Free MySQL Database Service instance (p.mysql) on Cloud Foundry. `db-small` is the name of free service plan
 
 Syntax to start a service:
 
@@ -18,7 +18,7 @@ cf create-service <service-name> <service-plan> <service-instance-name>
 ```
 
 ```bash
-cf create-service cleardb spark workshop-db
+cf create-service p.mysql db-small workshop-db
 ```
 
 * Introduce:
@@ -28,10 +28,10 @@ cf create-service cleardb spark workshop-db
 * Start a `Config Server` in Cloud Foundry and expose the configuration from this project
 
 ```
-cf create-service p-config-server trial workshop-config-server -c '{"git": { "uri": "https://github.com/dcaron/workshop-fortune-service.git", "searchPaths": "configuration", "label": "2-persistent-database-config-server" } }'
+cf create-service p-config-server standard workshop-config-server -c '{"git": { "uri": "https://github.com/dcaron/workshop-fortune-service.git", "searchPaths": "configuration", "label": "2-persistent-database-config-server" } }'
 ```
 
-* Disable security for now by adding a `SecurityConfig` and expose the actuator management endpoints
+* Disable security for now by adding a `SecurityConfig` and expose the actuator management endpoints (don't do this in production, have proper endpoint auth there unless your API is public altogether)
 * Configure JPA `spring.jpa` to use the `org.hibernate.dialect.MySQL55Dialect` and make sure the table to store the fortune texts in is created at startup of the application 
 * Bind the services to your application by adding services instances `workshop-db` and `workshop-config-server' to the `manifest.yml`. 
 * Run your application locally (Note for local development we still run H2 and don't use the config server)

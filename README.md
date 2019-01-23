@@ -7,13 +7,18 @@ In this workshop you are going to develop a Spring Boot 2 micro service and depl
 
 ## Prerequisites 
 
+We expect you to bring:
+
+* A laptop with Windows, Linux or MacOS
+* A working internet connection
+* An IDE or code editor of your choice
+
 We expect you have installed:
 
-* [Java 8 (or later)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [JDK8 or higher](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * [Cloud Foundry CLI](https://docs.run.pivotal.io/cf-cli/install-go-cli.html)
 
-And you have Pivotal Cloud Foundry (trial) account to login.
-In case you don't have an account yet [Create a Pivotal Cloud Foundry account](https://run.pivotal.io/).
+Login credentials and access to the environment will be provided by the instructor(s).
 
 ## Verify PCF CLI is working
 
@@ -24,7 +29,9 @@ cf -v
 Login to Cloud Foundry:
 
 ```bash
-cf login -a https://api.run.pivotal.io
+cf login -a https://api.sys.pushto.cf
+Email> <provided user>
+Password> <provided password>
 ```
 
 ## Build the project
