@@ -58,14 +58,14 @@ Nice work you now deployed your Fortune Service to PCF with a persistent databas
         <dependency>
             <groupId>io.pivotal.spring.cloud</groupId>
             <artifactId>spring-cloud-services-dependencies</artifactId>
-            <version>2.0.1.RELEASE</version>
+            <version>2.1.0.RELEASE</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-dependencies</artifactId>
-            <version>Finchley.SR1</version>
+            <version>Greenwich.RELEASE</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
