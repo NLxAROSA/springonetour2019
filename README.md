@@ -61,5 +61,6 @@ Open in the browser: [http://localhost:8080/](http://localhost:8080/)
 ## Exercises
 
 * Exercise 1: [start](exercise-1-start.md), [solution](exercise-1-solution.md)
-* Exercise 2: [start](exercise-2-start.md)
-
+* Exercise 2: [start](exercise-2-start.md), [solution](exercise-2-solution.md)
+* Exercise 3: [start](exercise-3-start.md), [solution](exercise-3-solution.md)
+* Exercise 4: [start](exercise-4-start.md), [solution](exercise-4-solution.md)

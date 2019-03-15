@@ -6,8 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FortuneController {
 
+    private final FortuneRepository repository;
+
+    public FortuneController(FortuneRepository repository) {
+        this.repository = repository;
+    }
+
     @GetMapping
     public String fortune() {
-        return "No fortune";
+        return repository.findRandomFortune().getText();
     }
 }

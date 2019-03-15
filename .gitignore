@@ -1,6 +1,10 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
+password.txt
+users.txt
+removeusers.txt
+
 ### STS ###
 .apt_generated
 .classpath
