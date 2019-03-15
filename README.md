@@ -1,24 +1,19 @@
-# Pivotal Cloud Foundry Workshop - Fortune Cookie Service
+# Spring One Tour 2019 Amsterdam Demo code
 
-This workshop get you up to speed with Pivotal Cloud Foundry.
-In this workshop you are going to develop a Spring Boot 2 micro service and deploy it to Cloud Foundry.
+Demo code for the Spring One Tour 2019 presentation demo of 'Deploying Applications Using Pivotal Cloud Foundry'
 
 [Getting started with Pivotal Cloud Foundry](https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry)
 
 ## Prerequisites 
 
-We expect you to bring:
-
-* A laptop with Windows, Linux or MacOS
+* A computer running Windows, Linux or MacOS
 * A working internet connection
 * An IDE or code editor of your choice
-
-We expect you have installed:
 
 * [JDK8 or higher](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * [Cloud Foundry CLI](https://docs.run.pivotal.io/cf-cli/install-go-cli.html)
 
-Login credentials and access to the environment will be provided by the instructor(s).
+Create a free account on [Pivotal Web Services](https://run.pivotal.io/) (hosted PCF environment)
 
 ## Verify PCF CLI is working
 
@@ -29,20 +24,12 @@ cf -v
 Login to Cloud Foundry:
 
 ```bash
-cf login -a https://api.sys.pushto.cf
-Email> <provided user>
-Password> <provided password>
+cf login -a https://api.run.pivotal.io
+Email> <your email>
+Password> <your password>
 ```
 
 ## Build the project
-
-For every exercise we need to build the project: 
-
-```bash
-mvn clean package
-```
-
-In case you don't have Maven installed run: 
 
 ```bash
 ./mvnw clean package
@@ -57,10 +44,3 @@ Before we push the application to Cloud Foundry run it locally first!
 ```
 
 Open in the browser: [http://localhost:8080/](http://localhost:8080/)
-
-## Exercises
-
-* Exercise 1: [start](exercise-1-start.md), [solution](exercise-1-solution.md)
-* Exercise 2: [start](exercise-2-start.md), [solution](exercise-2-solution.md)
-* Exercise 3: [start](exercise-3-start.md), [solution](exercise-3-solution.md)
-* Exercise 4: [start](exercise-4-start.md), [solution](exercise-4-solution.md)
