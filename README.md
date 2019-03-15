@@ -47,6 +47,8 @@ Open in the browser: [http://localhost:8080/](http://localhost:8080/)
 
 ## Create services on Cloud Foundry
 
+```bash
 cf create-service cleardb spark workshop-db
 cf create-service p-config-server trial workshop-config-server
 cf create-service p-service-registry trial workshop-service-registry
+```
