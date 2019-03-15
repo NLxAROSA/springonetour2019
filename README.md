@@ -21,7 +21,7 @@ Create a free account on [Pivotal Web Services](https://run.pivotal.io/) (hosted
 cf -v
 ```
 
-Login to Cloud Foundry:
+## Login to Cloud Foundry
 
 ```bash
 cf login -a https://api.run.pivotal.io
@@ -44,3 +44,9 @@ Before we push the application to Cloud Foundry run it locally first!
 ```
 
 Open in the browser: [http://localhost:8080/](http://localhost:8080/)
+
+## Create services on Cloud Foundry
+
+cf create-service cleardb spark workshop-db
+cf create-service p-config-server trial workshop-config-server
+cf create-service p-service-registry trial workshop-service-registry
