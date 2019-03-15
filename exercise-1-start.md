@@ -2,8 +2,9 @@
 
 ## Goal
 
-* Build A Spring Boot 2 micro service that Expose a REST API on the root and return a 
-Fortune Cookie message and deploy it to Cloud Foundry.
+* Build A Spring Boot 2 Micro Service that expose a REST API on the root and return a 
+Fortune Cookie text
+* Deploy the Micro Service to Cloud Foundry.
 
 ## Steps 
 
