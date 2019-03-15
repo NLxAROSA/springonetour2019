@@ -1,3 +1,10 @@
+management:
+  info.git.mode: full
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+---
 spring:
   profiles: cloud
   jpa:
@@ -6,6 +13,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL55Dialect
 ---
+spring:
   profiles: h2
   jpa:
     generate-ddl: true
