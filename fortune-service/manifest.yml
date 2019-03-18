@@ -1,9 +1,11 @@
 ---
 applications:
   - name: workshop-fortune-service
-    random-route: true
     path: target/workshop-fortune-service-0.0.1-SNAPSHOT.jar
     services:
     - workshop-db
     - workshop-config-server
     - workshop-service-registry
+    routes:
+    - route: workshop-fortune-service-s1t-ams.cfapps.io
+    - route: workshop-fortune-service.apps.internal

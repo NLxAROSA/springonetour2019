@@ -53,3 +53,10 @@ cf create-service p-config-server trial workshop-config-server
 cf create-service p-service-registry trial workshop-service-registry
 cf create-service cloudamqp lemur workshop-cloud-bus
 ```
+
+## Creating a route and adding a network policy on Cloud Foundry
+
+```bash
+cf create-route lars-dev apps.internal --hostname workshop-fortune-service
+cf add-network-policy workshop-greeting-ui --destination-app workshop-fortune-service --protocol tcp --port 8080
+```
