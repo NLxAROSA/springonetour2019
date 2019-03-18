@@ -51,4 +51,5 @@ Open in the browser: [http://localhost:8080/](http://localhost:8080/)
 cf create-service cleardb spark workshop-db
 cf create-service p-config-server trial workshop-config-server
 cf create-service p-service-registry trial workshop-service-registry
+cf create-service cloudamqp lemur workshop-cloud-bus
 ```

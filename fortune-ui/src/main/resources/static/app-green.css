@@ -1,0 +1,11 @@
+
+
+html { 
+    background: radial-gradient(ellipse at 50% bottom, #649664 0%, #324b32 60%) no-repeat center center fixed;
+   background-image: radial-gradient(at 50% 100%, rgb(100,150,100) 0%, rgb(50, 75, 50) 60%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+} 

@@ -1,6 +1,8 @@
 /target/
 /fortune-service/target/
+/fortune-ui/target/
 !.mvn/wrapper/maven-wrapper.jar
+.DS_Store
 
 password.txt
 users.txt
