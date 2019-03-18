@@ -1,4 +1,5 @@
 /target/
+/fortune-service/target/
 !.mvn/wrapper/maven-wrapper.jar
 
 password.txt
