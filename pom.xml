@@ -12,6 +12,7 @@
 
     <modules>
         <module>fortune-service</module>
+        <module>fortune-ui</module>
     </modules>
 
     <parent>
