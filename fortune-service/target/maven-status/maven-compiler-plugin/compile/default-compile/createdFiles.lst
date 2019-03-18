@@ -1,0 +1,5 @@
+io/pivotal/workshop/workshopfortuneservice/FortuneController.class
+io/pivotal/workshop/workshopfortuneservice/SecurityConfig.class
+io/pivotal/workshop/workshopfortuneservice/Fortune.class
+io/pivotal/workshop/workshopfortuneservice/WorkshopFortuneServiceApplication.class
+io/pivotal/workshop/workshopfortuneservice/FortuneRepository.class
