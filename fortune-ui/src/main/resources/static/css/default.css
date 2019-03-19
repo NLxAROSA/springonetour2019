@@ -1,0 +1,25 @@
+body	{
+	background: #000000;
+	font-family: arial, helvetica, sans-serif;
+	color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 1660px;
+	height: 100%;
+	text-align: center;
+	font-family: arial, helvetica, sans-serif;
+	background-image: url("../img/ft.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -20%;
+    background-size: 60%;
+}
+
+.container	{
+	width: 25%;
+	margin:0 auto;
+    margin-top: 30%;
+    font-size: 1.0vw;
+}

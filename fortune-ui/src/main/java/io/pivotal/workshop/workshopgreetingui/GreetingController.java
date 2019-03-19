@@ -28,7 +28,7 @@ public class GreetingController {
   String getGreeting(Model model){
 
     logger.debug("Adding greeting");
-    model.addAttribute("msg", "Greetings!!!");
+    model.addAttribute("msg", "Welcome!");
 
     String fortune = fortuneService.getFortune();
 
