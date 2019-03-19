@@ -17,6 +17,11 @@ body	{
     background-size: 60%;
 }
 
+.header {
+    background-image: url("../img/s1tlogo.svg");
+    background-repeat: no-repeat;
+}
+
 .container	{
 	width: 25%;
 	margin:0 auto;
