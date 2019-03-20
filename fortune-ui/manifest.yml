@@ -2,5 +2,7 @@
 applications:
 - name: workshop-greeting-ui
   path:  target/workshop-greeting-ui-0.0.1-SNAPSHOT.jar
+  services:
+    - workshop-config-ui
   routes:
   - route: workshop-greeting-ui-s1t-ams.cfapps.io
