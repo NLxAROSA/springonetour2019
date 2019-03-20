@@ -1,0 +1,7 @@
+spring.application.name: greeting-ui
+management:
+  info.git.mode: full
+  endpoints:
+    web:
+      exposure:
+        include: "*"
