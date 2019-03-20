@@ -1,4 +1,3 @@
-spring.application.name: greeting-ui
 fortune.service.uri: http://workshop-fortune-service.apps.internal:8080/
 management:
   info.git.mode: full
