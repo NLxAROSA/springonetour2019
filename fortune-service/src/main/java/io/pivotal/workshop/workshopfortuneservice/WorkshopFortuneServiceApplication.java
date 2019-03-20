@@ -20,6 +20,7 @@ public class WorkshopFortuneServiceApplication {
 	CommandLineRunner loadDatabase(FortuneRepository fortuneRepo) {
 		return args -> {
 			log.debug("loading database..");
+			fortuneRepo.deleteAll();
 			fortuneRepo.save(new Fortune("Do what works!"));
 			fortuneRepo.save(new Fortune("Do the right thing!"));
 			fortuneRepo.save(new Fortune("Always be kind!"));
