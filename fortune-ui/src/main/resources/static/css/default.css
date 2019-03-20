@@ -20,11 +20,13 @@ body	{
 .header {
     background-image: url("../img/s1tlogo.svg");
     background-repeat: no-repeat;
+    background-size: 20%;
+    font-size: 4vw;
 }
 
 .container	{
 	width: 25%;
 	margin:0 auto;
-    margin-top: 30%;
+    margin-top: 25%;
     font-size: 1.0vw;
 }
