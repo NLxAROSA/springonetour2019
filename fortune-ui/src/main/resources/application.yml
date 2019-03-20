@@ -1,3 +1,4 @@
+fortune.service.uri: http://localhost:8081/
 spring.application.name: greeting-ui
 management:
   info.git.mode: full
@@ -5,3 +6,7 @@ management:
     web:
       exposure:
         include: "*"
+---
+spring:
+  profiles: cloud
+fortune.service.uri: http://workshop-fortune-service.apps.internal:8080/
