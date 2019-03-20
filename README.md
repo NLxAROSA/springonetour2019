@@ -49,8 +49,7 @@ Open in the browser: [http://localhost:8080/](http://localhost:8080/)
 
 ```bash
 cf create-service cleardb spark workshop-db
-cf create-service p-config-server trial workshop-config-server
-cf create-service p-service-registry trial workshop-service-registry
+cf create-service p-config-server trial workshop-config-server -c '{"git": { "uri": "https://github.com/NLxAROSA/springonetour2019.git", "searchPaths": "configuration", "label": "master" } }'
 cf create-service cloudamqp lemur workshop-cloud-bus
 ```
 

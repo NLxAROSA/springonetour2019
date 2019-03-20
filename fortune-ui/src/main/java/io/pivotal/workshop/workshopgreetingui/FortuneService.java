@@ -47,7 +47,7 @@ public class FortuneService {
   }
 
   private String defaultFortune() {
-    return "This fortune is no good. Try another.";
+    return "Your future is unclear, please try later.";
   }
 
 }

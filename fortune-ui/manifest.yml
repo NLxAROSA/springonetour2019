@@ -1,9 +1,8 @@
 ---
 applications:
 - name: workshop-greeting-ui
-  random-route: true
   path:  target/workshop-greeting-ui-0.0.1-SNAPSHOT.jar
   services:
-  - workshop-config-server
   - workshop-cloud-bus
-  - workshop-service-registry
+  routes:
+  - route: workshop-greeting-ui-s1t-ams.cfapps.io

@@ -6,14 +6,6 @@ management:
         include: "*"
 ---
 spring:
-  profiles: cloud
-  jpa:
-    generate-ddl: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL55Dialect
----
-spring:
   profiles: h2
   jpa:
     generate-ddl: true
